@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SPA: encriptar | desencriptar">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container animated swing">
+            <img src="./assets/Vector.png" alt="logo de Alura">
+        </div>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <textarea class="inputEncriptar" rows="6" placeholder="Ingrese el texto aqui"
+                aria-label="Área de texto para ingresar texto a encriptar"></textarea>
+            <section>
+                <section class="recommendation-container">
+                    <div class="recommendation-img">
+                        <img src="assets/exclamacion.svg" alt="signo de admiracion" />
+                    </div>
+                    <p class="recommendation-message">
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                </section>
+                <section class="btn-section">
+                    <button class="btnEncriptar hvr-grow">Encriptar</button>
+                    <button class="btnDesencriptar hvr-grow">Desencriptar</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="msj-section">
+            <section class="img-msj-encrypt-section">
+                <img src="assets/Muñeco.png" alt="Imagen del muñeco en el mensaje encriptado."
+                    class="muñecoEncriptado" />
+                <p class="msjEncriptado1">Ningún mensaje fue encontrado</p>
+                <p class="msjEncriptado2">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </section>
+            <section class="msj-encrypt-section">
+                <p class="msj-encrypt"></p>
+                <button class="btn-copy">Copiar</button>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Script JavaScript -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
